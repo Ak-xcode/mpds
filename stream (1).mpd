@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/google/shaka-packager version v2.6.1-634af65-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" xmlns:cenc="urn:mpeg:cenc:2013" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT1193.63330078125S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="audio" lang="en" subsegmentAlignment="true">
+      <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="58b55ee5-cdd3-50ec-9578-8e8f9a06c552"/>
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAUnBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADIiKnZkb2NpcGhlcjowZDczZWU3MmU5ZmI0MjBiODNmZTZkOTVkMzhhNzBkMkjj3JWbBg==</cenc:pssh>
+      </ContentProtection>
+      <Representation id="0" bandwidth="128000" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <BaseURL>audio_0_ukuhh_128.mp4</BaseURL>
+        <SegmentBase indexRange="988-3407" timescale="48000">
+          <Initialization range="0-987"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="video" maxWidth="1920" maxHeight="1080" frameRate="15360/512" par="16:9">
+      <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="24f20f66-1ed2-5b42-bc87-58b34d95a546"/>
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAUnBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADIiKnZkb2NpcGhlcjowZDczZWU3MmU5ZmI0MjBiODNmZTZkOTVkMzhhNzBkMkjj3JWbBg==</cenc:pssh>
+      </ContentProtection>
+      <Representation id="1" bandwidth="272000" codecs="avc1.4d4028" mimeType="video/mp4" sar="1:1" width="1280" height="720">
+        <BaseURL>video_720_fkgbr_272.mp4</BaseURL>
+        <SegmentBase indexRange="1026-2953" timescale="15360">
+          <Initialization range="0-1025"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="2" bandwidth="672000" codecs="avc1.4d4028" mimeType="video/mp4" sar="1:1" width="1920" height="1080">
+        <BaseURL>video_1080_vxpnt_672.mp4</BaseURL>
+        <SegmentBase indexRange="1028-2943" timescale="15360">
+          <Initialization range="0-1027"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="3" bandwidth="1872000" codecs="avc1.4d4028" mimeType="video/mp4" sar="1:1" width="1920" height="1080">
+        <BaseURL>video_1080_cstmy_1872.mp4</BaseURL>
+        <SegmentBase indexRange="1028-2943" timescale="15360">
+          <Initialization range="0-1027"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
